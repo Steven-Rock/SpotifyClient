@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_comment_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="@color/medium3_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/frosted_glass"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/deep_black" >
+
+        <ImageView
+            android:id="@+id/thumbnail_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:contentDescription="Album"
+            android:scaleType="centerCrop"
+            android:src="@drawable/library_placeholder" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/album_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Perfect Circle"
+            android:textColor="@color/marine_blue"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingTop="4dp"
+            android:text="A Perfect Circle"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/track1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingTop="4dp"
+            android:text="Track"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/track2"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingTop="3dp"
+            android:text="Track"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/track3"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingTop="3dp"
+            android:text="Track"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+
+</FrameLayout>
+

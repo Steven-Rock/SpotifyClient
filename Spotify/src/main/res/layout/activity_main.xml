@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#211F21">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/medium3_gray"
+        android:gravity="center_horizontal|center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:paddingTop="0dp"
+            android:gravity="center_horizontal|center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/streamedFilter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/button_colors2"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                android:onClick="mostStreamed"
+                android:minHeight="40dp"
+                android:textStyle="bold"
+                android:text="Top Streamed" />
+
+            <View
+                android:id="@+id/streamedFilter_selected"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:visibility="visible"
+                android:gravity="bottom"
+                android:layout_marginTop="36dp"
+                android:background="@color/orange"
+                android:layout_below="@+id/all_filter" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.75dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/more_dark_gray3" />
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:gravity="center_horizontal|center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sharedFilter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/button_colors2"
+                android:textColor="@color/off_white"
+                android:textSize="16sp"
+                android:minHeight="40dp"
+                android:onClick="mostShared"
+                android:textStyle="bold"
+                android:text="Top Shared" />
+
+            <View
+                android:id="@+id/sharedFilter_selected"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="36dp"
+                android:visibility="invisible"
+                android:gravity="bottom"
+                android:background="@color/orange"
+                android:layout_below="@+id/photos_filter" />
+
+        </FrameLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/orange" />
+
+    <FrameLayout
+        android:id="@+id/my_crowd_detail_media"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@color/transparent"
+        android:visibility="visible">
+
+
+        <GridView
+            android:id="@+id/library_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="#00000000"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:background="@null"
+            android:gravity="center"
+            android:numColumns="3"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>
